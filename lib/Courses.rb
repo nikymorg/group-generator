@@ -104,7 +104,7 @@ def print_info
   puts "Course: #{self.name}\n------"
   puts "Instructors: \n-----------"
   @instructors.each {|instructor| puts " - #{instructor.name}"}
-  puts "\nStudents: \n--------"
+  puts "\nStudents: #{students.size}\n--------"
   @students.each {|student| puts " - #{student.name}"}
   nil
 end
