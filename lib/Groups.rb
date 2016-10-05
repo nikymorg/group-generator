@@ -1,3 +1,5 @@
+require 'pry'
+
 class Group
 
   @@all = []
@@ -11,13 +13,8 @@ class Group
   end
 
   def print_info(index)
-    puts "Group #{index + 1}, Instructor: #{@instructor.name}"
-    puts "-----------\n"
-    puts "Students: "
-    students.each do |student|
-      puts student.name
-    end
-    nil
+    puts "Group #{index + 1}: Instructor, #{@instructor.name}"
+    print "Students: " + students.map {|student| student.name}.sort.join(", ") +"\n\n"
   end
 
   def self.all

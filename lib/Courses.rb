@@ -93,11 +93,12 @@ def remove_used_combos
 end
 
 def print_groups
+  current_groups.sort!{|a, b| a.instructor.name.downcase <=> b.instructor.name.downcase}
   current_groups.each_with_index do |group, index|
-    group.print_info(index)
-    puts "\n"
-  end
-  nil
+     group.print_info(index)
+     puts "\n"
+   end
+   nil
 end
 
 def print_info
