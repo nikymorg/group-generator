@@ -11,13 +11,13 @@ class Group
   end
 
   def print_info(index)
-    puts "Group #{index + 1}: "
-    puts "Instructor: #{@instructor.name}"
-    puts "-----------\n"
+    puts "Group #{index + 1}: Instructor, #{@instructor.name}"
     puts "Students: "
-    students.each do |student|
-      puts student.name
+    to_print = students.map do |student|
+      student.name
     end
+    print to_print.join(", ")
+    puts "\n-----------\n"
     nil
   end
 

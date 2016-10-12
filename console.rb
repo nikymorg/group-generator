@@ -52,10 +52,10 @@ def course(input)
          current_course.print_groups
        when "I"
          puts "Instructors: #{current_course.instructors.size}"
-         current_course.instructors.each {|instructor| puts " - #{instructor.name}"}
+         puts current_course.instructors.map {|instructor| instructor.name}.sort.join(", ")
        when "S"
          puts "Students: #{current_course.students.size}"
-         current_course.students.each {|student| puts " - #{student.name}"}
+         puts current_course.students.map {|student| student.name}.sort.join(", ")
        when "B"
          do_course = false
        when "E"
@@ -84,7 +84,7 @@ def edit_course(course)
         results = "Instructors: "+course.instructors.map {|instructor| instructor.name}.sort.join(", ")
       when "2"
         course.add_student_by_name(input3)
-        results = "Students: \n - "+course.students.map {|student| student.name}.sort.join("\n - ")
+        results = "Students: \n - "+course.students.map {|student| student.name}.sort.join(", ")
       when "3"
         course.remove_by_name(input3)
         results = "Removed #{input3}"
