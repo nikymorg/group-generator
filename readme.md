@@ -1,11 +1,12 @@
+*This was a Flatiron School student project from 2016 and is no longer actively maintained.*
 
-### Mini-project time!  
+### Mini-project time!
 
 After a week of Flatiron School, you know that we are a fan of group work. However for teachers, making the groups can get tedious.  Let's make a grouping application that all of the classes at Flatiron School can use.
 
 We'll work on this project for the rest of today and tomorrow, so take your time to make it nice!  You'll also give a brief demonstration of your application to the rest of the class.
 
-To get started, you should have one team member fork this repository and add the others on your team as collaborators.  
+To get started, you should have one team member fork this repository and add the others on your team as collaborators.
 
 ## The application should have the following requirements
  1. We have multiple different courses occurring at Flatiron right now, so we should be able to associate a student with a particular class.
@@ -31,10 +32,6 @@ To get started, you should have one team member fork this repository and add the
 3. Translate those steps into code
    - Coerce - to the data that you want
    - Reject - data that you do not need.
-
-
-Here's an array of your names to manipulate
-`students = ["Amanda Steckler", "Benjamin Henriquez", "Caleb Cox", "Charlie Spencer", "Chris Peleti", "Colby Pines", "Craig Iturbe", "Drew Nickerson", "Eoghan Leddy", "Jake Zappin", "James Segarra", "Jason Arnold", "Jason Gluck", "Jess Harrelson", "Jonathan Peterkin", "Kevin Evans", "Krissa Santos", "Laura Shapiro", "Marc Immediato", "Matt Peleti", "Nick Scaglione", "Niky Morgan", "Niti Patel", "Perry Garet", "Rebecca Yi", "Robert Lin", "Salomé Braganza", "Scott Lindquist", "Thomas Marren", "Wesley Friedman", "Zack Adams"]`
 
 ### Hints
 1. You'll need classes for students, instructors, classes, and groups.
